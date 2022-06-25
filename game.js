@@ -202,19 +202,19 @@ class Game {
 
         }
         if(keyIsDown(UP_ARROW) && player.index !== null){
-            player.distance += 25;
+            player.distance += 1;
             player.update();
         }
         if(keyIsDown(DOWN_ARROW) && player.index !== null){
-            player.distance -= 25;
+            player.distance -= 1;
             player.update();
         }
         if(keyIsDown(LEFT_ARROW) && player.index !== null){
-            player.px = player.px + 25;
+            player.px = player.px + 1;
             player.update();
         }
         if(keyIsDown(RIGHT_ARROW) && player.index !== null){
-            player.px = player.px - 25;
+            player.px = player.px - 1;
             player.update();
         }
 
