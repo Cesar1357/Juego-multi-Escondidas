@@ -35,9 +35,6 @@ class Game {
         player.getSkin2();
         player.getSkin3();
         player.getSkin4();
-        bgs = createSprite(0,0,1000,1000);
-        bgs.addImage(bg);
-        bgs.scale = 20;
         car1 = createSprite(100,200);
         car2 = createSprite(300,200);
         car3 = createSprite(500,200);
@@ -167,6 +164,10 @@ class Game {
                 pared2 = createSprite(10000,0,50,20010);
                 pared3 = createSprite(0,-9990,20000,50);
                 pared4 = createSprite(0,9990,20000,50);
+                car1.setCollider("rectangle",0,0,100,100);
+                car2.setCollider("rectangle",0,0,100,100);
+                car3.setCollider("rectangle",0,0,100,100);
+                car4.setCollider("rectangle",0,0,100,100);
                 /*if(keyIsDown(32)){
                     var balas = createSprite(camera.position.x,camera.position.y,10,10);
                     balas.debug=false;
